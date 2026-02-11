@@ -144,16 +144,6 @@ After execution:
 
 ---
 
-## 💡 Key Highlights
-
-✔ Industry-standard automation framework  
-✔ Scalable & maintainable design  
-✔ Parallel test execution support  
-✔ Clean project structure  
-✔ Professional Git version control  
-
----
-
 ## 👩‍💻 Author
 
 **Rekha Rani**  
