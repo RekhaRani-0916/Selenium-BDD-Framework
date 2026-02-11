@@ -1,134 +1,114 @@
-🚀 Selenium BDD Automation Framework – AutomationExercise
+\# 🚀 Selenium BDD Automation Framework – AutomationExercise
 
-📌 Project Overview
 
 
+\## 📌 Project Overview
 
-This project is a robust end-to-end test automation framework built using Selenium WebDriver with BDD (Cucumber) to automate real user workflows on the AutomationExercise e-commerce web application.
 
 
+This project is a robust end-to-end test automation framework built using \*\*Selenium WebDriver with BDD (Cucumber)\*\* to automate real user workflows on the \*\*AutomationExercise\*\* e-commerce web application.
 
-The framework is designed following industry best practices such as Page Object Model (POM), reusable utilities, parallel execution, and structured reporting.
 
 
+The framework is designed following industry best practices such as:
 
-It validates critical user journeys including:
 
 
+\- Page Object Model (POM)
 
-Contact Us form submission
+\- Reusable utilities
 
+\- Parallel execution
 
+\- Structured reporting
 
-User Signup and Login
 
 
+\### ✔ Validated User Journeys
 
-Product search functionality
 
 
+\- Contact Us form submission  
 
-Add to cart \& checkout workflow
+\- User Signup and Login  
 
+\- Product search functionality  
 
+\- Add to cart \& checkout workflow  
 
-User authentication and session handling
+\- User authentication and session handling  
 
 
 
-🏗️ Framework Architecture
+---
 
 
 
-The framework follows a layered architecture:
+\## 🏗️ Framework Architecture
 
 
 
-✅ Page Object Model (POM)
+\### ✅ Page Object Model (POM)
 
+\- Each web page is represented as a separate class  
 
+\- UI elements and actions are encapsulated  
 
-Each web page is represented as a separate class
+\- Improves maintainability and reusability  
 
 
 
-UI elements and actions are encapsulated
+\### ✅ BDD Implementation (Cucumber)
 
+\- Test scenarios written in Gherkin format  
 
+\- Business-readable feature files  
 
-Improves maintainability and reusability
+\- Clear separation of steps and implementation  
 
 
 
-✅ BDD Implementation (Cucumber)
+\### ✅ Hooks (Before / After)
 
+\- Centralized WebDriver initialization  
 
+\- Cleanup after execution  
 
-Test scenarios written in Gherkin format
+\- Proper browser lifecycle handling  
 
 
 
-Business-readable feature files
+\### ✅ Parallel Execution
 
+\- Configured using TestNG  
 
+\- Enables faster execution of test scenarios  
 
-Clear separation of steps and implementation
+\- Scalable for large test suites  
 
 
 
-✅ Hooks (Before / After)
+\### ✅ Reporting
 
+\- Extent Reports integration  
 
+\- Detailed HTML report generation  
 
-Centralized WebDriver initialization
+\- Step-level execution logging  
 
+\- Pass/Fail visibility  
 
 
-Cleanup after execution
 
+---
 
 
-Proper browser lifecycle handling
 
+\## 📂 Project Structure
 
 
-✅ Parallel Execution
 
-
-
-Configured using TestNG
-
-
-
-Enables faster execution of test scenarios
-
-
-
-Scalable for large test suites
-
-
-
-✅ Reporting
-
-
-
-Extent Reports integration
-
-
-
-Detailed HTML report generation
-
-
-
-Step-level execution logging
-
-
-
-Pass/Fail visibility
-
-
-
-📂 Project Structure
+```
 
 src/test/java
 
@@ -156,119 +136,93 @@ src/test/resources
 
 pom.xml                 → Maven dependencies
 
+```
 
 
-🧪 Automated Test Scenarios
 
-🔹 Contact Us Functionality
+---
 
 
 
-Navigate to Contact page
+\## 🧪 Automated Test Scenarios
 
 
 
-Fill required details
+\### 🔹 Contact Us Functionality
 
+\- Navigate to Contact page  
 
+\- Fill required details  
 
-Submit form
+\- Submit form  
 
+\- Validate success message  
 
 
-Validate success message
 
+\### 🔹 User Signup \& Login
 
+\- Register new user  
 
-🔹 User Signup \& Login
+\- Create account  
 
+\- Logout  
 
+\- Login with created credentials  
 
-Register new user
+\- Validate successful authentication  
 
 
 
-Create account
+\### 🔹 Product Functionality
 
+\- Navigate to Products page  
 
+\- Add product to cart  
 
-Logout
+\- Verify cart contents  
 
+\- Proceed to checkout  
 
+\- Register/Login during checkout  
 
-Login with created credentials
 
 
+\### 🔹 Product Search
 
-Validate successful authentication
+\- Search for specific product (e.g., \*\*"T-Shirt"\*\*)  
 
+\- Validate search results  
 
 
-🔹 Product Functionality
 
+---
 
 
-Navigate to Products page
 
+\## ⚙️ Tech Stack
 
 
-Add product to cart
 
+\- Java 17  
 
+\- Selenium WebDriver  
 
-Verify cart contents
+\- Cucumber (BDD)  
 
+\- TestNG  
 
+\- Maven  
 
-Proceed to checkout
+\- Extent Reports  
 
 
 
-Register/Login during checkout
+---
 
 
 
-🔹 Product Search
-
-
-
-Search for specific product (e.g., "T-Shirt")
-
-
-
-Validate search results
-
-
-
-⚙️ Tech Stack
-
-
-
-Java 17
-
-
-
-Selenium WebDriver
-
-
-
-Cucumber (BDD)
-
-
-
-TestNG
-
-
-
-Maven
-
-
-
-Extent Reports
-
-
-
-🚀 How to Execute
+\## 🚀 How to Execute
 
 
 
@@ -276,9 +230,11 @@ Clone the repository:
 
 
 
+```bash
+
 git clone https://github.com/RekhaRani-0916/Selenium-BDD-Framework.git
 
-
+```
 
 
 
@@ -286,9 +242,11 @@ Navigate to project directory:
 
 
 
+```bash
+
 cd Selenium-BDD-Framework
 
-
+```
 
 
 
@@ -296,11 +254,19 @@ Run tests:
 
 
 
+```bash
+
 mvn clean test
 
+```
 
 
-📊 Reporting
+
+---
+
+
+
+\## 📊 Reporting
 
 
 
@@ -308,41 +274,47 @@ After execution:
 
 
 
-ExtentReport.html is generated
+\- `ExtentReport.html` is generated  
+
+\- Provides detailed step-level reporting  
+
+\- Includes execution status and logs  
 
 
 
-Provides detailed step-level reporting
+---
 
 
 
-Includes execution status and logs
+\## 💡 Key Highlights
 
 
 
-💡 Key Highlights
+✔ Industry-standard automation architecture  
+
+✔ Clean separation of concerns  
+
+✔ Maintainable and scalable framework  
+
+✔ Parallel test execution  
+
+✔ Structured reporting  
+
+✔ Professional Git version control  
 
 
 
-✔ Industry-standard automation architecture
-
-✔ Clean separation of concerns
-
-✔ Maintainable and scalable framework
-
-✔ Parallel test execution
-
-✔ Structured reporting
-
-✔ Professional Git version control
+---
 
 
 
-👩‍💻 Author
+\## 👩‍💻 Author
 
 
 
-Rekha Rani
+\*\*Rekha Rani\*\*   
 
-Selenium | Java | BDD | TestNG | Maven
+Selenium | Java | BDD | TestNG | Maven  
+
+
 
